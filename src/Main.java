@@ -5,7 +5,7 @@ public class Main {
         Calculator calculator = new MyCalculator();
         Stack myPile = new Pile();
         Scanner scan = new Scanner(System.in);
-        
+
 
 
 
