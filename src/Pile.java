@@ -5,12 +5,12 @@ public class Pile<T> implements Stack<T> {
     private Vector<T> Data = new Vector<T>(2,0);
 
     @Override
-    public void push(Object item) {
-
+    public void push(T item) {
+        Data.add(item);
     }
 
     @Override
-    public T pop() {
+    public T pop() {  //saca el útlimo elemento
         T item = Data.lastElement();
         Data.remove(-1);
         return item;
