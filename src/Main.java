@@ -4,10 +4,10 @@ import java.util.Scanner;
 import java.io.FileNotFoundException;
 import java.io.File;
 public class Main {
-    
+
     public static void main(String[] args){
         Calculator calculator = new MyCalculator();
-        Stack myPile = new Pile();
+        Stack<Integer> myPile = new Pile();
         Scanner scan = new Scanner(System.in);
         try{
             File f = new File("Prueba.txt");
@@ -21,7 +21,8 @@ public class Main {
                     catch (Exception e){
                         int a = myPile.pop();
                         int b = myPile.pop();
-                        calculator.calculate()
+                        String operand = readLine[i];
+                        calculator.calculate(a,b,operand);
                     }
                 }
                 System.out.println(line);
