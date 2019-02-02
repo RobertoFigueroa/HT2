@@ -6,15 +6,13 @@ public class MyCalculator implements Calculator {
             return num1+num2;
         }
         else if(op.equals("-")){
-            return num1-num2;
+            return num2-num1;
         }
         else if(op.equals("*")){
             return num1*num2;
         }
         else {
-            return num1/num2;
+            return num2/num1;
         }
     }
-
-
 }

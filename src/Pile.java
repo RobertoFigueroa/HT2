@@ -12,7 +12,7 @@ public class Pile<T> implements Stack<T> {
     @Override
     public T pop() {  //saca el útlimo elemento
         T item = Data.lastElement();
-        Data.remove(-1);
+        Data.remove(Data.size()-1);
         return item;
     }
 
